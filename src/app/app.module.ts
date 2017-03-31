@@ -7,11 +7,13 @@ import { MaterializeModule } from 'angular2-materialize';
 import { AppComponent } from './app.component';
 import { routing } from "app/app.routing";
 import { HomeComponent } from './pages/home/home.component';
+import { BoardComponent } from './pages/board/board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,
