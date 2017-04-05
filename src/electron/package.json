@@ -9,6 +9,10 @@
   "author": "Diego Câmara",
   "license": "ISC",
   "devDependencies": {
-    "electron": "~1.6.2"
+    "electron": "~1.6.2",
+    "electron-rebuild": "^1.5.7"
+  },
+  "dependencies": {
+    "johnny-five": "^0.10.6"
   }
 }

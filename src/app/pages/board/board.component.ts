@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NativeWindowRefService } from "app/services/nativewindowref.service";
 
 @Component({
   selector: 'app-board',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoardComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private nativeWindowRefService: NativeWindowRefService
+  ) { }
 
   ngOnInit() {
+
+    let five = this.nativeWindowRefService.nativeWindow.DATA.five;
+    let board = new five.Board();
+    
+
   }
 
 }
