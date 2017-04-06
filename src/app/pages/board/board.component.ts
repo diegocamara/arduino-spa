@@ -8,6 +8,8 @@ import { NativeWindowRefService } from "app/services/nativewindowref.service";
 })
 export class BoardComponent implements OnInit {
 
+  board: any;
+
   constructor(
     private nativeWindowRefService: NativeWindowRefService
   ) { }
@@ -15,8 +17,11 @@ export class BoardComponent implements OnInit {
   ngOnInit() {
 
     let five = this.nativeWindowRefService.nativeWindow.DATA.five;
-    let board = new five.Board();
+    this.board = new five.Board({repl:false});
     
+    this.board.on('ready', () => {
+           
+    });
 
   }
 
