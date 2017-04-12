@@ -8,6 +8,7 @@
 # dependencies
 /node_modules
 /src/electron/node_modules
+/arduinobot/node_modules
 
 # IDEs and editors
 /.idea
